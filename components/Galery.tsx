@@ -1,8 +1,10 @@
-import { SetStateAction, useState } from 'react';
+import { SetStateAction, useEffect, useRef, useState } from 'react';
 
 export default function Galery() {
   const [isOpen, setIsOpen] = useState(false); // Estado para abrir/fechar a imagem
   const [activeImage, setActiveImage] = useState(''); // Estado para armazenar a imagem ativa
+  const galeryRef = useRef<HTMLDivElement | null>(null); // Referência da seção de galeria
+  const [isVisible, setIsVisible] = useState(false); // Estado para saber se a galeria está visível
 
   // Função para abrir a imagem
   const openImage = (image: SetStateAction<string>) => {
@@ -16,9 +18,38 @@ export default function Galery() {
     setActiveImage('');
   }
 
+  // Efeito para observar a visibilidade da galeria
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.disconnect(); // Desconectar após ser visível
+          }
+        });
+      },
+      { threshold: 0.1 } // Define a porcentagem da seção que precisa ser visível (10%)
+    );
+
+    if (galeryRef.current) {
+      observer.observe(galeryRef.current);
+    }
+
+    return () => {
+      if (galeryRef.current) {
+        observer.unobserve(galeryRef.current);
+      }
+    };
+  }, []);
+
   return (
     <>
-      <section id="about" className="customH py-20 linear1">
+      <section
+        id="about"
+        className={`customH py-20 linear1 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+        ref={galeryRef}
+      >
         <div className="maxWidth">
           <h1 className="text-center text-4xl font-black text- font-Dancing">Venha conhecer nossa casa</h1>
           <h1 className="text-center font-Dancing text-[#CCA686] text-6xl ">Boho Ateliê</h1>
@@ -105,7 +136,6 @@ export default function Galery() {
           </div>
         </div>
       )}
-      
     </>
   );
 }

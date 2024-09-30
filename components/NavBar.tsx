@@ -78,8 +78,9 @@ const NavBar: React.FC = () => {
                         <span onClick={() => handleNavigation('main')} className={`block py-2 cursor-pointer ${activeSection === 'main' ? 'border-b-[2px] lg:border-Primary' : ''}`}>Início</span>
                         <span onClick={() => handleNavigation('about')} className={`block py-2 cursor-pointer ${activeSection === 'about' ? 'border-b-[2px] lg:border-Primary' : ''}`}>Sobre nós</span>
                         <span onClick={() => handleNavigation('services')} className={`block py-2 cursor-pointer ${activeSection === 'services' ? 'border-b-[2px] lg:border-Primary' : ''}`}>Serviços</span>
-                        <span onClick={() => handleNavigation('portfolio')} className={`block py-2 cursor-pointer ${activeSection === 'portfolio' ? 'border-b-[2px] lg:border-Primary' : ''}`}>Noivas</span>
                         <span onClick={() => handleNavigation('professionals')} className={`block py-2 cursor-pointer ${activeSection === 'professionals' ? 'border-b-[2px] lg:border-Primary' : ''}`}>Profissionais</span>
+
+                        <span onClick={() => handleNavigation('portfolio')} className={`block py-2 cursor-pointer ${activeSection === 'portfolio' ? 'border-b-[2px] lg:border-Primary' : ''}`}>Noivas</span>
                         <span onClick={() => handleNavigation('contact')} className={`block py-2 cursor-pointer ${activeSection === 'contact' ? 'border-b-[2px] lg:border-Primary' : ''}`}>Contato</span>
 
                     </nav>

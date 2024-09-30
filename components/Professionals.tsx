@@ -1,22 +1,34 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css'; // CSS do Swiper
+import { motion } from 'framer-motion'; // Importando o framer-motion
+import { useInView } from 'react-intersection-observer'; // Importando o react-intersection-observer
 
 export default function Professionals() {
+    const { ref, inView } = useInView({
+        triggerOnce: true, // Para garantir que o efeito será ativado apenas uma vez
+        threshold: 0.1, // 10% da seção visível para ativar o efeito
+    });
+
     return (
-        <section id="professionals" className="md:flex customH">
+        <motion.section
+            id="professionals"
+            className="md:flex customH"
+            ref={ref} // A seção será monitorada
+            initial={{ opacity: 0 }} // Começa invisível
+            animate={{ opacity: inView ? 1 : 0 }} // Quando estiver em view, a opacidade vai para 1
+            transition={{ duration: 0.5 }} // Animação de transição suave
+        >
             <div className="bg-left w-full py-16 md:w-[40%] mr-8 px-2 ">
                 <div className="text-center">
-                    <h2 className="text-2xl text-white tracking-wide uppercase">Nossos</h2>
-                    <h1 className="text-3xl text-[#cca686] tracking-wide uppercase mt-3">Profissionais</h1>
-                    <p className="text-white mt-3">Conheça todos nossos experts que estão a sua disposição para cuidar do seu cabelo.</p>
+                    <h2 className="text-2xl font-light text-white tracking-wide uppercase">Nossos</h2>
+                    <h1 className="text-5xl text-Primary tracking-wide font-Dancing">Profissionais</h1>
+                    <p className="text-white mt-3">Conheça todos nossos experts que estão a sua disposição para cuidar de você.</p>
                 </div>
             </div>
 
-
-
             {/* Carousel */}
-            <div className="md:w-[60%] flex flex-col py-20">
-                <div className='w-full flex justify-center mb-8'>
+            <div className="md:w-[60%] flex flex-col py-12">
+                <div className='w-full flex justify-center mb-12'>
                     <img className='w-[300px]' src="Setas.png" alt="" />
                 </div>
 
@@ -87,6 +99,6 @@ export default function Professionals() {
                     </Swiper>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 }

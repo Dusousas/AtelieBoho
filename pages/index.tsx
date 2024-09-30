@@ -5,6 +5,7 @@ import Main from "@/components/Main";
 import NavBar from "@/components/NavBar";
 import Professionals from "@/components/Professionals";
 import Service from "@/components/Service";
+import Signature from "@/components/Signature";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Galery />
       <Service />
+      <Signature />
       <Brands />
       <Professionals />
 

@@ -47,6 +47,28 @@
   background: linear-gradient(to bottom, #F9ECE1 1%, #FFFFFF 20%);
 }
 
+.btnAssine {
+  background-color: #000000;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 12px;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.assine {
+  background-image: url("../public/bg-assine.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-color: #936C4B;
+  height: 348px;
+}
+
 
 
 
