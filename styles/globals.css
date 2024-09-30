@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.maxWidth{
+  margin: 0 auto;
+  padding: 0 2%;
+  max-width: 1620px;
+}
+
+.customH{
+  position: relative;
+  top: 67px;
+}
+
+/* BACKGROUNDS */
+.bgMain {
+  background-image: url("../public/bg-main4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 67px);
+}
+
+.bg-left {
+  background-image: url('../public/bg-left2.jpg');
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: right;
+}
+
+.linear1{
+  background: linear-gradient(to bottom, #FFFFFF 0%, #F9ECE1 5%);
+}
+
+.linear{
+  background: linear-gradient(to bottom, #F9ECE1 1%, #FFFFFF 20%);
+}
+
+
+
+
+
+
+
