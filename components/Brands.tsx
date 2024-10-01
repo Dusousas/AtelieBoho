@@ -19,24 +19,26 @@ const Brands: React.FC = () => {
   };
 
   return (
-    <section id="services" className="bg-[#F9ECE1] customH py-4 overflow-hidden">
-      <div className="maxWidth">
-        <Marquee
-          velocity={30}
-          scatterRandomly={false}
-          resetAfterTries={100}
-          direction="rtl" // Direção do marquee
-          onInit={handleInit} // Callback na inicialização
-          onFinish={handleFinish} // Callback ao finalizar
-        >
-          {logos.map((logo, index) => (
-            <div key={index} className="mx-32">
-              <img className="w-[110px]" src={logo.src} alt={logo.alt} />
-            </div>
-          ))}
-        </Marquee>
-      </div>
-    </section>
+    <>
+      <section id="services" className="bg-[#F9ECE1] customH py-4 overflow-hidden">
+        <div className="maxWidth">
+          <Marquee
+            velocity={30}
+            scatterRandomly={false}
+            resetAfterTries={100}
+            direction="rtl" // Direção do marquee
+            onInit={handleInit} // Callback na inicialização
+            onFinish={handleFinish} // Callback ao finalizar
+          >
+            {logos.map((logo, index) => (
+              <div key={index} className="mx-32">
+                <img className="w-[110px]" src={logo.src} alt={logo.alt} />
+              </div>
+            ))}
+          </Marquee>
+        </div>
+      </section>
+    </>
   );
 };
 

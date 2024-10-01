@@ -1,4 +1,5 @@
 import { SetStateAction, useEffect, useRef, useState } from 'react';
+import React from 'react';
 
 export default function Galery() {
   const [isOpen, setIsOpen] = useState(false); // Estado para abrir/fechar a imagem

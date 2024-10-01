@@ -6,6 +6,9 @@ import NavBar from "@/components/NavBar";
 import Professionals from "@/components/Professionals";
 import Service from "@/components/Service";
 import Signature from "@/components/Signature";
+import Bride from "@/components/Bride";
+import Depoimentos from "@/components/Depoimentos";
+
 
 export default function Home() {
   return (
@@ -18,6 +21,8 @@ export default function Home() {
       <Signature />
       <Brands />
       <Professionals />
+      <Bride />
+      <Depoimentos />
 
     </div>
   );

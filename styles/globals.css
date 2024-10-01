@@ -29,10 +29,16 @@
   height: calc(100vh - 67px);
 }
 
+.bgBride {
+  background-image: url("../public/bgBride.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-left {
   background-image: url('../public/bg-left2.jpg');
   background-size: cover;
-
   display: flex;
   align-items: center;
   justify-content: center;

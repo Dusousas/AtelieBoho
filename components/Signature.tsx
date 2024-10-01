@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Slide, toast } from "react-toastify";
+import React from 'react';
+
 
 type FormData = {
   email: string;
@@ -43,32 +45,34 @@ const Signature: React.FC = () => {
   };
 
   return (
-    <section id="services" className="assine customH py-4 flex flex-col items-center justify-center">
-      <h4 className="text-lg uppercase text-[#cca686] text-center tracking-[4px]">Assine</h4>
-      <h1 className="text-center text-4xl font-Dancing text-white">Boho Ateliê</h1>
-      <p className="text-center text-white my-2">
-        Cadastre-se para receber gratuitamente nossas promoções diretamente em seu e-mail.
-      </p>
+    <>
+      <section id="services" className="assine customH py-4 flex flex-col items-center justify-center">
+        <h4 className="text-lg uppercase text-[#cca686] text-center tracking-[4px]">Assine</h4>
+        <h1 className="text-center text-4xl font-Dancing text-white">Boho Ateliê</h1>
+        <p className="text-center text-white my-2">
+          Cadastre-se para receber gratuitamente nossas promoções diretamente em seu e-mail.
+        </p>
 
-      <form
-        className="formAssine max-w-[80%] lg:w-full"
-        autoComplete="off"
-        onSubmit={handleSubmit(onSubmit)}
-      >
-        <div className="register-btn w-full flex flex-col lg:flex-row justify-center gap-4">
-          <input
-            type="email"
-            placeholder="Informe seu e-mail"
-            className="rounded outline-none py-2 px-4 lg:w-[28%] "
-            {...register("email", { required: "Por favor, preencha seu email!" })}
-          />
-          <button className="btnAssine" type="submit">
-            Assinar Boho
-          </button>
-        </div>
-        {errors.email && <div id="mensagemErro" style={{ color: "red" }}>{errors.email.message}</div>}
-      </form>
-    </section>
+        <form
+          className="formAssine max-w-[80%] lg:w-full"
+          autoComplete="off"
+          onSubmit={handleSubmit(onSubmit)}
+        >
+          <div className="register-btn w-full flex flex-col lg:flex-row justify-center gap-4">
+            <input
+              type="email"
+              placeholder="Informe seu e-mail"
+              className="rounded outline-none py-2 px-4 lg:w-[28%] "
+              {...register("email", { required: "Por favor, preencha seu email!" })}
+            />
+            <button className="btnAssine" type="submit">
+              Assinar Boho
+            </button>
+          </div>
+          {errors.email && <div id="mensagemErro" style={{ color: "red" }}>{errors.email.message}</div>}
+        </form>
+      </section>
+    </>
   );
 };
 
