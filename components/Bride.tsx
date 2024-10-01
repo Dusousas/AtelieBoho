@@ -3,7 +3,7 @@ import React from 'react';
 export default function Bride() {
     return (
         <>
-            <section className='customH py-20 bgBride'>
+            <section id='bride' className='customH py-20 bgBride'>
                 <div className='maxWidth'>
                     <h2 className="text-center text-4xl font-black font-Dancing">Dia de</h2>
                     <h1 className="text-center text-6xl font-Dancing text-Primary pb-10">Noiva</h1>

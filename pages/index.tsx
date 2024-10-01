@@ -8,6 +8,9 @@ import Service from "@/components/Service";
 import Signature from "@/components/Signature";
 import Bride from "@/components/Bride";
 import Depoimentos from "@/components/Depoimentos";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+
 
 
 export default function Home() {
@@ -23,6 +26,8 @@ export default function Home() {
       <Professionals />
       <Bride />
       <Depoimentos />
+      <Contact />
+      <Footer />
 
     </div>
   );
