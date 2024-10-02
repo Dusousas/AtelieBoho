@@ -21,7 +21,7 @@ const Brands: React.FC = () => {
   return (
     <>
       <section id="services" className="bg-[#F9ECE1] customH py-4 overflow-hidden">
-        <div className="maxWidth">
+        <div className="">
           <Marquee
             velocity={30}
             scatterRandomly={false}
