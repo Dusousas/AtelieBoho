@@ -60,7 +60,7 @@ const NavBar: React.FC = () => {
             <header className="fixed py-2 bg-white w-full z-20 shadow-2xl shadow-black-500/20">
                 <div className="justify-between flex items-center maxWidth">
                     <div>
-                        <a className='text-black uppercase font-black text-2xl font-Oswald ' href=""><img className='w-[70px]' src="logo-boho.png" alt="LogoTipo Boho Atelie" /></a>
+                        <a className='text-black uppercase font-black text-2xl font-Oswald ' href=""><img className='w-[128px]' src="logo-boho.png" alt="LogoTipo Boho Atelie" /></a>
                     </div>
 
                     <div className="lg:hidden">
@@ -74,7 +74,7 @@ const NavBar: React.FC = () => {
                             </svg>
                         </button>
                     </div>
-                    <nav className={`lg:flex text-black  ${isOpen ? 'block' : 'hidden'} h-[100vh] text-center bg-Primary flex flex-col gap-10 items-center justify-center absolute left-0 z-10 font-semibold top-[84px]  w-full lg:flex lg:h-[39px] lg:flex-row lg:static lg:w-auto lg:bg-transparent`}>
+                    <nav className={`lg:flex text-black  ${isOpen ? 'block' : 'hidden'} navH text-center bg-Primary flex flex-col gap-10 items-center justify-center absolute left-0 z-10 font-semibold top-[65px]  w-full lg:flex lg:h-[39px] lg:flex-row lg:static lg:w-auto lg:bg-transparent`}>
                         <span onClick={() => handleNavigation('main')} className={`block py-2 cursor-pointer ${activeSection === 'main' ? 'border-b-[2px] lg:border-Primary' : ''}`}>Início</span>
                         <span onClick={() => handleNavigation('about')} className={`block py-2 cursor-pointer ${activeSection === 'about' ? 'border-b-[2px] lg:border-Primary' : ''}`}>Sobre nós</span>
                         <span onClick={() => handleNavigation('services')} className={`block py-2 cursor-pointer ${activeSection === 'services' ? 'border-b-[2px] lg:border-Primary' : ''}`}>Serviços</span>
