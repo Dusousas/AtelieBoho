@@ -60,43 +60,73 @@ export default function Professionals() {
                             <SwiperSlide>
                                 <article className="flex flex-col items-center md:items-start"> {/* Alinhamento diferente em mobile e desktop */}
                                     <img src="/perfil01.png" alt="Ana Chelly" className="mb-2" />
-                                    <h1 className="font-normal text-center md:text-left">Ana Chelly</h1>
-                                    <p className="text-[#cca686] font-normal text-xs text-center md:text-left">Hairstylist</p>
+                                    <div className='flex gap-4'>
+                                        <h1 className="font-normal text-center md:text-left">Ana Chelly</h1>
+                                        <div className=''>
+                                            <a href=""><img className='w-[25px]' src="instagram.png" alt="" /></a>
+                                        </div>
+                                    </div>
+                                    <p className="text-[#cca686] mt-2 font-normal text-xs text-center md:text-left">Hairstylist</p>
+
                                 </article>
                             </SwiperSlide>
 
                             <SwiperSlide>
                                 <article className="flex flex-col items-center md:items-start">
                                     <img src="/perfil02.png" alt="Ana Paula" className="mb-2" />
-                                    <h1 className="font-normal text-center md:text-left">Ana Paula</h1>
-                                    <p className="text-[#cca686] font-normal text-xs text-center md:text-left">Hairstylist</p>
+                                    <div className='flex gap-4'>
+                                        <h1 className="font-normal text-center md:text-left">Ana Paula</h1>
+                                        <div className=''>
+                                            <a href=""><img className='w-[25px]' src="instagram.png" alt="" /></a>
+                                        </div>
+                                    </div>
+                                    <p className="text-[#cca686] mt-2 font-normal text-xs text-center md:text-left">Hairstylist</p>
+
                                 </article>
                             </SwiperSlide>
 
                             <SwiperSlide>
                                 <article className="flex flex-col items-center md:items-start">
                                     <img src="/perfil03.png" alt="Claudia Ribeiro" className="mb-2" />
-                                    <h1 className="font-normal text-center md:text-left">Claudia Ribeiro</h1>
-                                    <p className="text-[#cca686] font-normal text-xs text-center md:text-left">Manicure | Pedicure | Depilação</p>
+                                    <div className='flex gap-4'>
+                                        <h1 className="font-normal text-center md:text-left">Claudia Ribeiro</h1>
+                                        <div className=''>
+                                            <a href=""><img className='w-[25px]' src="instagram.png" alt="" /></a>
+                                        </div>
+                                    </div>
+                                    <p className="text-[#cca686] mt-2  font-normal text-xs text-center md:text-left">Manicure | Pedicure | Depilação</p>
                                     <p className="text-[#cca686] font-normal text-xs text-center md:text-left">Design de sobrancelha</p>
+
                                 </article>
                             </SwiperSlide>
 
                             <SwiperSlide>
                                 <article className="flex flex-col items-center md:items-start">
                                     <img src="/perfil04.png" alt="Tetê Ferrari" className="mb-2" />
-                                    <h1 className="font-normal text-center md:text-left">Tetê Ferrari</h1>
-                                    <p className="text-[#cca686] font-normal text-xs text-center md:text-left">Especialista em noivas | Corte</p>
+                                    <div className='flex gap-4'>
+                                        <h1 className="font-normal text-center md:text-left">Tetê Ferrari</h1>
+                                        <div className=''>
+                                            <a href=""><img className='w-[25px]' src="instagram.png" alt="" /></a>
+                                        </div>
+                                    </div>
+                                    <p className="text-[#cca686] mt-2 font-normal text-xs text-center md:text-left">Especialista em noivas | Corte</p>
                                     <p className="text-[#cca686] font-normal text-xs text-center md:text-left">Cabelos cacheados | Maquiadora</p>
+
                                 </article>
                             </SwiperSlide>
 
                             <SwiperSlide>
                                 <article className="flex flex-col items-center md:items-start">
                                     <img src="/perfil05.png" alt="Hiara Balbino" className="mb-2" />
-                                    <h1 className="font-normal text-center md:text-left">Hiara Balbino</h1>
-                                    <p className="text-[#cca686] font-normal text-xs text-center md:text-left">Cílios | Limpeza de pele | SPA Facial</p>
+                                    <div className='flex gap-4'>
+                                        <h1 className="font-normal text-center md:text-left">Hiara Balbino</h1>
+                                        <div className=''>
+                                            <a href=""><img className='w-[25px]' src="instagram.png" alt="" /></a>
+                                        </div>
+                                    </div>
+                                    <p className="text-[#cca686] mt-2  font-normal text-xs text-center md:text-left">Cílios | Limpeza de pele | SPA Facial</p>
                                     <p className="text-[#cca686] font-normal text-xs text-center md:text-left">Dermaplaning | Hidra Gloss</p>
+
                                 </article>
                             </SwiperSlide>
                         </Swiper>
