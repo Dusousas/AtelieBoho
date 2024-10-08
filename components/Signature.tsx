@@ -48,7 +48,7 @@ const Signature: React.FC = () => {
     <>
       <section id="services" className="assine customH py-4 flex flex-col items-center justify-center">
         <h4 className="text-lg uppercase text-[#cca686] text-center tracking-[4px]">Assine</h4>
-        <h1 className="text-center text-4xl font-Dancing text-white">Boho Ateliê</h1>
+        <h1 className="text-center text-2xl text-white font-light">Boho Ateliê</h1>
         <p className="text-center text-white my-2">
           Cadastre-se para receber gratuitamente nossas promoções diretamente em seu e-mail.
         </p>

@@ -52,8 +52,8 @@ export default function Galery() {
         ref={galeryRef}
       >
         <div className="maxWidth">
-          <h1 className="text-center text-4xl font-black text- font-Dancing">Venha conhecer nossa casa</h1>
-          <h1 className="text-center font-Dancing text-[#CCA686] text-6xl ">Boho Ateliê</h1>
+          <h1 className="text-center text-2xl font-normal">Venha conhecer nossa casa</h1>
+          <h1 className="text-center text-4xl text-Primary">• Boho Ateliê •</h1>
 
           {/* Grid Responsiva */}
           <div className="grid grid-cols-1 gap-4 mt-10 lg:grid-cols-8 lg:grid-rows-8">

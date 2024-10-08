@@ -74,15 +74,13 @@ const NavBar: React.FC = () => {
                             </svg>
                         </button>
                     </div>
-
-                    <nav className={`lg:flex text-black  ${isOpen ? 'block' : 'hidden'} h-[100vh] text-center bg-Primary flex flex-col gap-10 items-center justify-center absolute left-0 z-10 top-[84px] uppercase w-full lg:flex lg:h-[39px] lg:flex-row lg:static lg:w-auto lg:bg-transparent`}>
+                    <nav className={`lg:flex text-black  ${isOpen ? 'block' : 'hidden'} h-[100vh] text-center bg-Primary flex flex-col gap-10 items-center justify-center absolute left-0 z-10 font-semibold top-[84px]  w-full lg:flex lg:h-[39px] lg:flex-row lg:static lg:w-auto lg:bg-transparent`}>
                         <span onClick={() => handleNavigation('main')} className={`block py-2 cursor-pointer ${activeSection === 'main' ? 'border-b-[2px] lg:border-Primary' : ''}`}>Início</span>
                         <span onClick={() => handleNavigation('about')} className={`block py-2 cursor-pointer ${activeSection === 'about' ? 'border-b-[2px] lg:border-Primary' : ''}`}>Sobre nós</span>
                         <span onClick={() => handleNavigation('services')} className={`block py-2 cursor-pointer ${activeSection === 'services' ? 'border-b-[2px] lg:border-Primary' : ''}`}>Serviços</span>
                         <span onClick={() => handleNavigation('professionals')} className={`block py-2 cursor-pointer ${activeSection === 'professionals' ? 'border-b-[2px] lg:border-Primary' : ''}`}>Profissionais</span>
                         <span onClick={() => handleNavigation('bride')} className={`block py-2 cursor-pointer ${activeSection === 'bride' ? 'border-b-[2px] lg:border-Primary' : ''}`}>Noivas</span>
                         <span onClick={() => handleNavigation('contact')} className={`block py-2 cursor-pointer ${activeSection === 'contact' ? 'border-b-[2px] lg:border-Primary' : ''}`}>Contato</span>
-
                     </nav>
                 </div>
             </header>

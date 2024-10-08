@@ -16,7 +16,7 @@ export default function About() {
 
           {/* Título "Sobre a" */}
           <motion.h2
-            className="text-center text-4xl font-black font-Dancing"
+            className="text-center text-2xl font-normal"
             initial={{ opacity: 0, y: 50 }} // Começa invisível e deslocado para baixo
             animate={{ opacity: aboutInView ? 1 : 0, y: aboutInView ? 0 : 50 }} // Animação de entrada
             transition={{ duration: 0.6 }} // Duração da animação
@@ -26,12 +26,12 @@ export default function About() {
 
           {/* Título "Boho Ateliê" */}
           <motion.h1
-            className="text-center text-6xl font-Dancing text-Primary"
+            className="text-center text-4xl text-Primary"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: aboutInView ? 1 : 0, y: aboutInView ? 0 : 50 }}
             transition={{ duration: 0.6, delay: 0.2 }} // Atraso de 0.2s para o segundo título
           >
-            Boho Ateliê
+            • Boho Ateliê •
           </motion.h1>
 
           {/* Parágrafo */}

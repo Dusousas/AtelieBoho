@@ -52,9 +52,8 @@ const Contact: React.FC = () => {
                         <p className="text-center lg:text-left">Ficou com alguma dúvida?</p>
                         <h1 className="text-[#cca686] uppercase text-3xl text-center tracking-wide lg:text-left">Fale Conosco</h1>
                         <p className="text-center pt-6 lg:text-left">Não perca mais tempo e entre em contato com nossa equipe de especialistas. Teremos o mais prazer em ajudar você.</p>
-                        <article className="flex items-center justify-center pt-6 gap-4">
+                        <article className="flex items-center justify-center lg:justify-start pt-6 gap-4">
                             <a href="https://www.instagram.com/atelie.boho/" target="_blank"><img src="/instagram.png" alt="" /></a>
-                            <a href="#"><img src="/facebook.png" alt="" /></a>
                             <a href="https://wa.me/5514910057531?text=Olá,%20visitei%20o%20site%20Boho%20Atelie%20e%20fiquei%20interessado(a)%20nos%20seus%20serviços.%20Gostaria%20de%20agendar%20um%20horário%20para%20conhecer%20mais%20de%20perto%20o%20trabalho%20de%20vocês." target="_blank"><img src="/whatsapp.png" alt="" /></a>
                         </article>
 

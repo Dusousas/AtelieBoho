@@ -15,8 +15,8 @@ export default function Service() {
     return (
         <>
             <section id="services" className="customH py-20 linear">
-                <h2 className="text-center text-4xl font-black font-Dancing">Nossos Principais</h2>
-                <h1 className="text-center text-6xl font-Dancing text-Primary">Serviços</h1>
+                <h2 className="text-center text-2xl font-normal">Nossos Principais</h2>
+                <h1 className="text-center text-4xl text-Primary">Serviços</h1>
                 <div className="flex flex-wrap justify-center pt-14 gap-4">
                     <motion.article
                         className="md:w-1/2 lg:w-1/4 max-w-[350px] text-center py-4 px-4 border-[#ccc] border-[1px] rounded-lg"

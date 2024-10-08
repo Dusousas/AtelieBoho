@@ -24,7 +24,7 @@ export default function Professionals() {
                 <div className="bg-left w-full py-16 md:w-[40%] mr-8 px-2 ">
                     <div className="text-center">
                         <h2 className="text-2xl font-light text-white tracking-wide uppercase">Nossos</h2>
-                        <h1 className="text-5xl text-Primary tracking-wide font-Dancing">Profissionais</h1>
+                        <h1 className="text-4xl text-Primary font-light uppercase tracking-wide ">Profissionais</h1>
                         <p className="text-white mt-3">Conheça todos nossos experts que estão a sua disposição para cuidar de você.</p>
                     </div>
                 </div>
