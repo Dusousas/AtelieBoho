@@ -63,7 +63,7 @@ export default function Professionals() {
                                     <div className='flex gap-4'>
                                         <h1 className="font-normal text-center md:text-left">Ana Chelly</h1>
                                         <div className=''>
-                                            <a href=""><img className='w-[25px]' src="instagram.png" alt="" /></a>
+                                            <a target='_blank' href="https://www.instagram.com/anachellycosta?igsh=c2lhbDNmZnpnbndn"><img className='w-[25px]' src="instagram.png" alt="" /></a>
                                         </div>
                                     </div>
                                     <p className="text-[#cca686] mt-2 font-normal text-xs text-center md:text-left">Hairstylist</p>
@@ -77,7 +77,7 @@ export default function Professionals() {
                                     <div className='flex gap-4'>
                                         <h1 className="font-normal text-center md:text-left">Ana Paula</h1>
                                         <div className=''>
-                                            <a href=""><img className='w-[25px]' src="instagram.png" alt="" /></a>
+                                            <a target='_blank' href="https://www.instagram.com/atelie.boho/"><img className='w-[25px]' src="instagram.png" alt="" /></a>
                                         </div>
                                     </div>
                                     <p className="text-[#cca686] mt-2 font-normal text-xs text-center md:text-left">Hairstylist</p>
@@ -91,7 +91,7 @@ export default function Professionals() {
                                     <div className='flex gap-4'>
                                         <h1 className="font-normal text-center md:text-left">Claudia Ribeiro</h1>
                                         <div className=''>
-                                            <a href=""><img className='w-[25px]' src="instagram.png" alt="" /></a>
+                                            <a target='_blank' href="https://www.instagram.com/claudiaribeiro_beauty?igsh=dW1wOWxxNnppNzl1"><img className='w-[25px]' src="instagram.png" alt="" /></a>
                                         </div>
                                     </div>
                                     <p className="text-[#cca686] mt-2  font-normal text-xs text-center md:text-left">Manicure | Pedicure | Depilação</p>
@@ -106,7 +106,7 @@ export default function Professionals() {
                                     <div className='flex gap-4'>
                                         <h1 className="font-normal text-center md:text-left">Tetê Ferrari</h1>
                                         <div className=''>
-                                            <a href=""><img className='w-[25px]' src="instagram.png" alt="" /></a>
+                                            <a target='_blank' href="https://www.instagram.com/teteferrari?igsh=MXN6eGxqZGljbmdkcA%3D%3D"><img className='w-[25px]' src="instagram.png" alt="" /></a>
                                         </div>
                                     </div>
                                     <p className="text-[#cca686] mt-2 font-normal text-xs text-center md:text-left">Especialista em noivas | Corte</p>
@@ -121,7 +121,7 @@ export default function Professionals() {
                                     <div className='flex gap-4'>
                                         <h1 className="font-normal text-center md:text-left">Hiara Balbino</h1>
                                         <div className=''>
-                                            <a href=""><img className='w-[25px]' src="instagram.png" alt="" /></a>
+                                            <a target='_blank' href="https://www.instagram.com/hiara.balbino?igsh=MXdmZGdhbzJjMnoxbA%3D%3D"><img className='w-[25px]' src="instagram.png" alt="" /></a>
                                         </div>
                                     </div>
                                     <p className="text-[#cca686] mt-2  font-normal text-xs text-center md:text-left">Cílios | Limpeza de pele | SPA Facial</p>

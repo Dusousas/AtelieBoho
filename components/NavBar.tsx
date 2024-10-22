@@ -60,7 +60,7 @@ const NavBar: React.FC = () => {
             <header className="fixed py-2 bg-white w-full z-20 shadow-2xl shadow-black-500/20">
                 <div className="justify-between flex items-center maxWidth">
                     <div>
-                        <a className='text-black uppercase font-black text-2xl font-Oswald ' href=""><img className='w-[128px]' src="logo-boho.png" alt="LogoTipo Boho Atelie" /></a>
+                        <a className='text-black uppercase font-black text-2xl font-Oswald ' href=""><img className='w-[128px]' src="logoBoho.png" alt="LogoTipo Boho Atelie" /></a>
                     </div>
 
                     <div className="lg:hidden">
