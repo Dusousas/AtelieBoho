@@ -2,35 +2,32 @@ import { SetStateAction, useEffect, useRef, useState } from 'react';
 import React from 'react';
 
 export default function Galery() {
-  const [isOpen, setIsOpen] = useState(false); // Estado para abrir/fechar a imagem
-  const [activeImage, setActiveImage] = useState(''); // Estado para armazenar a imagem ativa
-  const galeryRef = useRef<HTMLDivElement | null>(null); // Referência da seção de galeria
-  const [isVisible, setIsVisible] = useState(false); // Estado para saber se a galeria está visível
+  const [isOpen, setIsOpen] = useState(false); 
+  const [activeImage, setActiveImage] = useState(''); 
+  const galeryRef = useRef<HTMLDivElement | null>(null); 
+  const [isVisible, setIsVisible] = useState(false); 
 
-  // Função para abrir a imagem
   const openImage = (image: SetStateAction<string>) => {
     setActiveImage(image);
     setIsOpen(true);
   };
 
-  // Função para fechar a imagem
   function closeImage() {
     setIsOpen(false);
     setActiveImage('');
   }
 
-  // Efeito para observar a visibilidade da galeria
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setIsVisible(true);
-            observer.disconnect(); // Desconectar após ser visível
+            observer.disconnect();
           }
         });
       },
-      { threshold: 0.1 } // Define a porcentagem da seção que precisa ser visível (10%)
+      { threshold: 0.1 }
     );
 
     if (galeryRef.current) {
@@ -59,55 +56,55 @@ export default function Galery() {
           <div className="grid grid-cols-1 gap-4 mt-10 lg:grid-cols-8 lg:grid-rows-8">
             <div className="col-span-1 lg:col-span-2 lg:row-span-2">
               <img
-                src="Galeria1.jpg"
+                src="galeria/Galeria1.jpg"
                 alt=""
                 className="object-cover w-full h-full cursor-pointer"
-                onClick={() => openImage('Galeria1.jpg')}
+                onClick={() => openImage('galeria/Galeria1.jpg')}
               />
             </div>
 
             <div className="col-span-1 lg:col-span-2 lg:row-span-2 lg:col-start-3">
               <img
-                src="Galeria2.jpg"
+                src="galeria/Galeria2.jpg"
                 alt=""
                 className="object-cover w-full h-full cursor-pointer"
-                onClick={() => openImage('Galeria2.jpg')}
+                onClick={() => openImage('galeria/Galeria2.jpg')}
               />
             </div>
 
             <div className="col-span-1 lg:col-span-4 lg:row-span-3 lg:col-start-1 lg:row-start-3">
               <img
-                src="Galeria3.jpg"
+                src="galeria/Galeria3.jpg"
                 alt=""
                 className="object-cover w-full h-full cursor-pointer"
-                onClick={() => openImage('Galeria3.jpg')}
+                onClick={() => openImage('galeria/Galeria3.jpg')}
               />
             </div>
 
             <div className="col-span-1 lg:col-span-4 lg:row-span-3 lg:col-start-1 lg:row-start-6">
               <img
-                src="Galeria5.jpg"
+                src="galeria/Galeria5.jpg"
                 alt=""
                 className="object-cover w-full h-full cursor-pointer"
-                onClick={() => openImage('Galeria5.jpg')}
+                onClick={() => openImage('galeria/Galeria5.jpg')}
               />
             </div>
 
             <div className="col-span-1 lg:col-span-4 lg:row-span-5 lg:col-start-5 lg:row-start-1">
               <img
-                src="Galeria6.jpg"
+                src="galeria/Galeria6.jpg"
                 alt=""
                 className="object-cover w-full h-full cursor-pointer"
-                onClick={() => openImage('Galeria6.jpg')}
+                onClick={() => openImage('galeria/Galeria6.jpg')}
               />
             </div>
 
             <div className="col-span-1 lg:col-span-4 lg:row-span-3 lg:col-start-5 lg:row-start-6">
               <img
-                src="Galeria7.jpg"
+                src="galeria/Galeria7.jpg"
                 alt=""
                 className="object-cover w-full h-full cursor-pointer"
-                onClick={() => openImage('Galeria7.jpg')}
+                onClick={() => openImage('galeria/Galeria7.jpg')}
               />
             </div>
           </div>

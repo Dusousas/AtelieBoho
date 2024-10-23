@@ -120,7 +120,7 @@ export default function About() {
             <div className="hidden lg:block lg:w-1/2">
               <motion.img
                 className="lg:w-full"
-                src="/sobre-img.png"
+                src="/sobre-img.webp"
                 alt="Boho Ateliê"
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: aboutInView ? 1 : 0, x: aboutInView ? 0 : 100 }}

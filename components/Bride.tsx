@@ -12,32 +12,32 @@ export default function Bride() {
                     <div className="grid lg:grid-cols-3 grid-cols-1 gap-4">
                         {/* Imagem 1 */}
                         <div className="lg:col-start-1 lg:row-start-3 max-h-[300px]">
-                            <img className='object-cover object-top w-full h-full ' src="Noiva1.jpeg" alt="Noiva 1" />
+                            <img className='object-cover object-top w-full h-full ' src="noivas/Noiva1.jpeg" alt="Noiva 1" />
                         </div>
 
                         {/* Imagem 4 */}
                         <div className="lg:row-span-2 lg:col-start-2 lg:row-start-1 max-h-[614px]">
-                            <img className='object-cover w-full h-full ' src="Noiva4.jpeg" alt="Noiva 4" />
+                            <img className='object-cover w-full h-full ' src="noivas/Noiva4.jpeg" alt="Noiva 4" />
                         </div>
 
                         {/* Imagem 3 */}
                         <div className="lg:col-start-3 lg:row-start-1 max-h-[300px]">
-                            <img className='object-cover object-center w-full h-full ' src="Noiva3.jpg" alt="Noiva 3" />
+                            <img className='object-cover object-center w-full h-full ' src="noivas/Noiva3.jpg" alt="Noiva 3" />
                         </div>
 
                         {/* Imagem 2 */}
                         <div className="lg:row-span-2 lg:col-start-1 lg:row-start-1">
-                            <img className='object-cover w-full h-full' src="Noiva2.jpeg" alt="Noiva 2" />
+                            <img className='object-cover w-full h-full' src="noivas/Noiva2.jpeg" alt="Noiva 2" />
                         </div>
 
                         {/* Imagem 5 */}
                         <div className="lg:col-start-2 lg:row-start-3 max-h-[300px]">
-                            <img className='object-cover w-full h-full ' src="Noiva5.jpg" alt="Noiva 5" />
+                            <img className='object-cover w-full h-full ' src="noivas/Noiva5.jpg" alt="Noiva 5" />
                         </div>
 
                         {/* Imagem 6 */}
                         <div className="lg:row-span-2 lg:col-start-3 lg:row-start-2 max-h-[614px]">
-                            <img className='object-cover object-top w-full h-full ' src="Noiva6.jpg" alt="Noiva 6" />
+                            <img className='object-cover object-top w-full h-full ' src="noivas/Noiva6.jpg" alt="Noiva 6" />
                         </div>
                     </div>
 

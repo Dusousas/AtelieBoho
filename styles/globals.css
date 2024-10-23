@@ -26,7 +26,7 @@
 
 /* BACKGROUNDS */
 .bgMain {
-  background-image: url("../public/bg-main4.jpg");
+  background-image: url("../public/bg-main.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -34,14 +34,14 @@
 }
 
 .bgBride {
-  background-image: url("../public/bgBride.jpg");
+  background-image: url("../public/bgBride.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .bg-left {
-  background-image: url('../public/bg-left2.jpg');
+  background-image: url('../public/bg-left.webp');
   background-size: cover;
   display: flex;
   align-items: center;
@@ -49,6 +49,16 @@
   background-position: right;
 }
 
+.assine {
+  background-image: url("../public/bg-assine.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-color: #936C4B;
+  height: 348px;
+}
+
+/* GRADIENTS */
 .linear1{
   background: linear-gradient(to bottom, #FFFFFF 0%, #F9ECE1 5%);
 }
@@ -70,14 +80,7 @@
   text-transform: uppercase;
 }
 
-.assine {
-  background-image: url("../public/bg-assine.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  background-color: #936C4B;
-  height: 348px;
-}
+
 
 
 
